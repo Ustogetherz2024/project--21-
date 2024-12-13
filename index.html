@@ -1,36 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы по маркетингу</title>
+    <link rel="stylesheet" href="styles/" </head>
+
 <body>
     <header>
-
+        <h1>Курсы по маркетингу</h1>
+        <nav>
+            <ul>
+                <li><a href="#courses">Курсы</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <h1>пипиоупи</h1>
-        <h2>22222222</h2>
-<p>текст 1</p>
-<p>текст 2</p>
-<p>текст 3</p>
-<h2>пример маркированного списка</h2>
-<ul>
-    <li>pukipuki</li>
-    <li>kakikaki</li>
-    <li>kakachki</li>
-</ul>
-<h2>original name</h2>
-<ol>
-<li>point1</li>
-<li>point1</li>
-<li>point1</li>
-</ol>
-<img src="images/indian.jpg" width="300">
+        <section id="courses">
+            <h2>Наши курсы</h2>
+            <div class="course">
+                <h3>Основы цифрового маркетинга</h3>
+                <p>Изучите основы цифрового маркетинга, включая SEO, SMM и контент-маркетинг</p>
+            </div>
+            <div class="course">
+                <h3>Продвинутый SEO</h3>
+                <p>Углубленное изучение методов оптимизации для поисковых систем</p>
+            </div>
+            <div class="course">
+            <h3>Социальные сети для бизнеса</h3>
+            <p>Как использовать социальные сети для увеличения продаж и вовлеченности</p>
+            </div>
+        </section>
+        <section id="about">
+            <h2>Контакты</h2>
+            <form id="contactForm">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="text" id="email" required>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+        <img src="images/indian.jpg" width="300">
+
+
     </main>
     <footer>
-
+        <p>&copy; 2024 Курсы по маркетингу. Все права защищены.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
