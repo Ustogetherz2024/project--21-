@@ -1,54 +1,108 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Курсы по маркетингу</title>
-    <link rel="stylesheet" href="styles/" </head>
-
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
     <header>
-        <h1>Курсы по маркетингу</h1>
+        <div class="logo">МАРКЕТПРО</div>
         <nav>
             <ul>
-                <li><a href="#courses">Курсы</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Курсы</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Вход/Регистрация</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="courses">
-            <h2>Наши курсы</h2>
-            <div class="course">
-                <h3>Основы цифрового маркетинга</h3>
-                <p>Изучите основы цифрового маркетинга, включая SEO, SMM и контент-маркетинг</p>
-            </div>
-            <div class="course">
-                <h3>Продвинутый SEO</h3>
-                <p>Углубленное изучение методов оптимизации для поисковых систем</p>
-            </div>
-            <div class="course">
-            <h3>Социальные сети для бизнеса</h3>
-            <p>Как использовать социальные сети для увеличения продаж и вовлеченности</p>
-            </div>
-        </section>
-        <section id="about">
-            <h2>Контакты</h2>
-            <form id="contactForm">
-                <label for="name">Имя:</label>
-                <input type="text" id="name" required>
-                <label for="email">Email:</label>
-                <input type="text" id="email" required>
-                <button type="submit">Отправить</button>
-            </form>
-        </section>
 
-        <img src="images/indian.jpg" width="300">
+    <section class="hero">
+        <img src="images/3D girl with books Illustration.jpg">
+        <h1>Прокачай свои навыки в маркетинге!</h1>
+        <p>Онлайн-курсы от экспертов отрасли</p>
+        <a class="cta-button" href="#">Записаться на курс</a>
+    </section>
 
+    <section class="popular-courses">
+        <h2>Наши популярные курсы</h2>
+        <div class="course-card">
+            <img src="course1.jpg" alt="Курс 1">
+            <h3>Курс по SEO</h3>
+            <p>Научитесь оптимизировать сайты для поисковых систем.</p>
+            <span>⭐⭐⭐⭐⭐</span>
+            <a href="#">Узнать больше</a>
+        </div>
+        <div class="course-card">
+            <img src="course2.jpg" alt="Курс 2">
+            <h3>Курс по SMM</h3>
+            <p>Создавайте эффективные стратегии в социальных сетях.</p>
+            <span>⭐⭐⭐⭐⭐</span>
+            <a href="#">Узнать больше</a>
+        </div>
+    </section>
 
-    </main>
+    <section class="why-choose-us">
+        <img src="images/3D students making ok sign Illustration.jpg"
+        <h2>Почему выбирают нас?</h2>
+        <div class="benefit">
+            <h3>Опытные преподаватели</h3>
+        </div>
+        <div class="benefit">
+            <h3>Гибкий график обучения</h3>
+        </div>
+        <div class="benefit">
+            <h3>Практические задания</h3>
+        </div>
+        <div class="benefit">
+            <h3>Сертификаты по окончании</h3>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Что говорят наши студенты</h2>
+        <img src="images/Elevated Conversations.jpg">
+        <div class="testimonial">
+            <img src="student1.jpg" alt="Студент 1">
+            <p>"Отличный курс! Много полезной информации."</p>
+            <span>- Иван Иванов</span>
+        </div>
+
+    </section>
+
+    <section class="blog">
+        <h2>Полезные статьи</h2>
+        <article class="blog-post">
+            <h3>Как выбрать курс по маркетингу?</h3>
+            <p>Советы по выбору лучших курсов.</p>
+            <span>Дата: 01.01.2023</span>
+            <a href="#">Читать далее</a>
+        </article>
+    </section>
+
+    <section class="newsletter">
+        <h2>Подпишитесь на наши новости</h2>
+        <input type="email" placeholder="Ваш email">
+        <button>Подписаться</button>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Условия использования</a></li>
+        </ul>
+        <div class="social-media">
+            Социальные сети
+        </div>
+        <div class="contact-info">
+            Контакты: marketpro@gmail.com
+        </div>
     <footer>
         <p>&copy; 2024 Курсы по маркетингу. Все права защищены.</p>
     </footer>
