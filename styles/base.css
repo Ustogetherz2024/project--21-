@@ -1,31 +1,121 @@
+:root {
+    --primary-color: #FFD700; /* золотисто-желтый */
+    --primary-dark: #FFC000; /* более темный желтый */
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-light: #F5F5F5;
+    --gray: #E0E0E0;
+    --text-color: #333333;
+}
+
 *,
 ::before,
 ::after {
-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 html,
 body {
-font-family: 'Arial', sans-serif;
-font-size: 18px;
-line-height: 30px;
-color: #000000;
-background-color: #ffffff;
-overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--white);
+    overflow-x: hidden;
 }
+
+h1, h2, h3, h4 {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button--primary {
+    background-color: var(--primary-color);
+    color: var(--black);
+}
+
+.button--primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.button--secondary {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--black);
+}
+
+.button--secondary:hover {
+    background-color: var(--primary-color);
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50%;
+    height: 4px;
+    background-color: var(--primary-color);
+}
+
 img {
-display: block;
-max-width: 100%;
-height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
+
 .visually-hidden {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-padding: 0;
-white-space: nowrap;
-border: 0;
-clip-path: inset(100%);
-clip: rect(0 0 0 0);
-overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    white-space: nowrap;
+    border: 0;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
