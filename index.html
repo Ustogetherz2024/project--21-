@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -9,105 +8,117 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">МАРКЕТПРО</div>
-        <nav>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Курсы</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Блог</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Вход/Регистрация</a></li>
+    <header class="header">
+        <div class="header__logo">МАРКЕТПРО</div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Главная</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Курсы</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">О нас</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Блог</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link header__nav-link--auth">Вход/Регистрация</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <img src="images/3D girl with books Illustration.jpg">
-        <h1>Прокачай свои навыки в маркетинге!</h1>
-        <p>Онлайн-курсы от экспертов отрасли</p>
-        <a class="cta-button" href="#">Записаться на курс</a>
+        <img src="images\3DGirlWithBooks.jpg" alt="Девушка с книгами" class="hero__image">
+        <h1 class="hero__title">Прокачай свои навыки в маркетинге!</h1>
+        <p class="hero__subtitle">Онлайн-курсы от экспертов отрасли</p>
+        <a class="hero__button button button--primary" href="#">Записаться на курс</a>
     </section>
 
-    <section class="popular-courses">
-        <h2>Наши популярные курсы</h2>
-        <div class="course-card">
-            <img src="course1.jpg" alt="Курс 1">
-            <h3>Курс по SEO</h3>
-            <p>Научитесь оптимизировать сайты для поисковых систем.</p>
-            <span>⭐⭐⭐⭐⭐</span>
-            <a href="#">Узнать больше</a>
-        </div>
-        <div class="course-card">
-            <img src="course2.jpg" alt="Курс 2">
-            <h3>Курс по SMM</h3>
-            <p>Создавайте эффективные стратегии в социальных сетях.</p>
-            <span>⭐⭐⭐⭐⭐</span>
-            <a href="#">Узнать больше</a>
+    <section class="courses">
+        <h2 class="courses__title section-title">Наши популярные курсы</h2>
+        <div class="courses__list">
+            <div class="courses__item course-card">
+                <img src="images\SEO_Course.png" alt="Курс по SEO" class="course-card__image">
+                <h3 class="course-card__title">Курс по SEO</h3>
+                <p class="course-card__description">Научитесь оптимизировать сайты для поисковых систем.</p>
+                <span class="course-card__rating">⭐⭐⭐⭐⭐</span>
+                <a href="#" class="course-card__link button button--secondary">Узнать больше</a>
+            </div>
+            <div class="courses__item course-card">
+                <img src="images\SMM_Course.jpg" alt="Курс по SMM" class="course-card__image">
+                <h3 class="course-card__title">Курс по SMM</h3>
+                <p class="course-card__description">Создавайте эффективные стратегии в социальных сетях.</p>
+                <span class="course-card__rating">⭐⭐⭐⭐⭐</span>
+                <a href="#" class="course-card__link button button--secondary">Узнать больше</a>
+            </div>
         </div>
     </section>
 
-    <section class="why-choose-us">
-        <img src="images/3D students making ok sign Illustration.jpg"
-        <h2>Почему выбирают нас?</h2>
-        <div class="benefit">
-            <h3>Опытные преподаватели</h3>
-        </div>
-        <div class="benefit">
-            <h3>Гибкий график обучения</h3>
-        </div>
-        <div class="benefit">
-            <h3>Практические задания</h3>
-        </div>
-        <div class="benefit">
-            <h3>Сертификаты по окончании</h3>
+    <section class="benefits">
+        <img src="images\3DStudentsmakingOkSing.jpg" alt="Студенты" class="benefits__image">
+        <h2 class="benefits__title section-title">Почему выбирают нас?</h2>
+        <div class="benefits__list">
+            <div class="benefits__item benefit">
+                <h3 class="benefit__title">Опытные преподаватели</h3>
+            </div>
+            <div class="benefits__item benefit">
+                <h3 class="benefit__title">Гибкий график обучения</h3>
+            </div>
+            <div class="benefits__item benefit">
+                <h3 class="benefit__title">Практические задания</h3>
+            </div>
+            <div class="benefits__item benefit">
+                <h3 class="benefit__title">Сертификаты по окончании</h3>
+            </div>
         </div>
     </section>
 
     <section class="testimonials">
-        <h2>Что говорят наши студенты</h2>
-        <img src="images/Elevated Conversations.jpg">
-        <div class="testimonial">
-            <img src="student1.jpg" alt="Студент 1">
-            <p>"Отличный курс! Много полезной информации."</p>
-            <span>- Иван Иванов</span>
+        <h2 class="testimonials__title section-title">Что говорят наши студенты</h2>
+        <img src="images/ElevatedConversations.jpg" alt="Общение" class="testimonials__image">
+        <div class="testimonials__list">
+            <div class="testimonials__item testimonial">
+                <img src="images/StudentIvan.jpg" alt="Студент 1" class="testimonial__image">
+                <p class="testimonial__text">"Отличный курс! Много полезной информации."</p>
+                <span class="testimonial__author">- Иван Иванов</span>
+            </div>
         </div>
-
     </section>
 
     <section class="blog">
-        <h2>Полезные статьи</h2>
-        <article class="blog-post">
-            <h3>Как выбрать курс по маркетингу?</h3>
-            <p>Советы по выбору лучших курсов.</p>
-            <span>Дата: 01.01.2023</span>
-            <a href="#">Читать далее</a>
-        </article>
+        <h2 class="blog__title section-title">Полезные статьи</h2>
+        <div class="blog__list">
+            <article class="blog__item blog-post">
+                <h3 class="blog-post__title">Как выбрать курс по маркетингу?</h3>
+                <p class="blog-post__excerpt">Советы по выбору лучших курсов.</p>
+                <span class="blog-post__date">Дата: 01.01.2023</span>
+                <a href="#" class="blog-post__link">Читать далее</a>
+            </article>
+        </div>
     </section>
 
-    <section class="newsletter">
-        <h2>Подпишитесь на наши новости</h2>
-        <input type="email" placeholder="Ваш email">
-        <button>Подписаться</button>
+    <section class="subscribe">
+        <h2 class="subscribe__title section-title">Подпишитесь на наши новости</h2>
+        <form class="subscribe__form">
+            <input type="email" placeholder="Ваш email" class="subscribe__input">
+            <button type="submit" class="subscribe__button button button--primary">Подписаться</button>
+        </form>
     </section>
 
-    <footer>
-        <ul>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Политика конфиденциальности</a></li>
-            <li><a href="#">Условия использования</a></li>
-        </ul>
-        <div class="social-media">
-            Социальные сети
+    <footer class="footer">
+        <div class="footer__links">
+            <ul class="footer__links-list">
+                <li class="footer__links-item"><a href="#" class="footer__link">О нас</a></li>
+                <li class="footer__links-item"><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+                <li class="footer__links-item"><a href="#" class="footer__link">Условия использования</a></li>
+            </ul>
         </div>
-        <div class="contact-info">
-            Контакты: marketpro@gmail.com
+        <div class="footer__social social">
+            <span class="social__title">Социальные сети</span>
         </div>
-    <footer>
-        <p>&copy; 2024 Курсы по маркетингу. Все права защищены.</p>
+        <div class="footer__contacts">
+            <span class="footer__contacts-text">Контакты: marketpro@gmail.com</span>
+        </div>
+        <div class="footer__copyright">
+            <p>&copy; 2024 Курсы по маркетингу. Все права защищены.</p>
+        </div>
     </footer>
+    
     <script src="script.js"></script>
 </body>
-
 </html>
