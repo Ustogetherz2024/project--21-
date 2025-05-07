@@ -6,6 +6,7 @@
     <title>Курсы по маркетингу</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
     <header class="header">
@@ -70,13 +71,23 @@
 
     <section class="testimonials">
         <h2 class="testimonials__title section-title">Что говорят наши студенты</h2>
-        <img src="images/ElevatedConversations.jpg" alt="Общение" class="testimonials__image">
-        <div class="testimonials__list">
-            <div class="testimonials__item testimonial">
-                <img src="images/StudentIvan.jpg" alt="Студент 1" class="testimonial__image">
-                <p class="testimonial__text">"Отличный курс! Много полезной информации."</p>
-                <span class="testimonial__author">- Иван Иванов</span>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Слайд 1 -->
+                <div class="swiper-slide testimonial">
+                    <img src="images/StudentIvan.jpg" alt="Иван Иванов" class="testimonial__image">
+                    <p class="testimonial__text">"Отличный курс! Много полезной информации."</p>
+                    <span class="testimonial__author">- Иван Иванов</span>
+                </div>
+                <!-- Слайд 2 (добавляем еще один для примера) -->
+                <div class="swiper-slide testimonial">
+                    <img src="images/StudentElena.jpg" alt="Елена Петрова" class="testimonial__image">
+                    <p class="testimonial__text">"Практические задания помогли закрепить теорию."</p>
+                    <span class="testimonial__author">- Елена Петрова</span>
+                </div>
             </div>
+            <!-- Добавляем пагинацию (точки) -->
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -119,6 +130,9 @@
         </div>
     </footer>
     
-    <script src="script.js"></script>
+    <button class="scroll-top" title="Наверх">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js\scripts\script.js"></script>
 </body>
 </html>

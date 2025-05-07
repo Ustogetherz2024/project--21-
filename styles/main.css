@@ -227,3 +227,53 @@
 .subscribe__input:focus {
     outline: 2px solid var(--primary-dark);
 }
+
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #FFD700; /* Жёлтый */
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1000;
+  }
+  
+  .scroll-top.visible {
+    opacity: 1;
+  }
+  
+  .scroll-top:hover {
+    background-color: #FFC000; /* Темнее жёлтый */
+  }
+
+  .swiper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    background-color: var(--gray-light);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--primary-color);
+}
+
+/* Адаптив для мобильных (на всякий случай) */
+@media (max-width: 768px) {
+    .swiper {
+        padding: 10px;
+    }
+}
