@@ -9,128 +9,119 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header__logo">МАРКЕТПРО</div>
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Главная</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Курсы</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">О нас</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Блог</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link header__nav-link--auth">Вход/Регистрация</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <img src="images\3DGirlWithBooks.jpg" alt="Девушка с книгами" class="hero__image">
-        <h1 class="hero__title">Прокачай свои навыки в маркетинге!</h1>
-        <p class="hero__subtitle">Онлайн-курсы от экспертов отрасли</p>
-        <a class="hero__button button button--primary" href="#">Записаться на курс</a>
-    </section>
+    <div class="preloader">
+        <div class="preloader__loader"></div>
+    </div>
 
-    <section class="courses">
-        <h2 class="courses__title section-title">Наши популярные курсы</h2>
-        <div class="courses__list">
-            <div class="courses__item course-card">
-                <img src="images\SEO_Course.png" alt="Курс по SEO" class="course-card__image">
-                <h3 class="course-card__title">Курс по SEO</h3>
-                <p class="course-card__description">Научитесь оптимизировать сайты для поисковых систем.</p>
-                <span class="course-card__rating">⭐⭐⭐⭐⭐</span>
-                <a href="#" class="course-card__link button button--secondary">Узнать больше</a>
-            </div>
-            <div class="courses__item course-card">
-                <img src="images\SMM_Course.jpg" alt="Курс по SMM" class="course-card__image">
-                <h3 class="course-card__title">Курс по SMM</h3>
-                <p class="course-card__description">Создавайте эффективные стратегии в социальных сетях.</p>
-                <span class="course-card__rating">⭐⭐⭐⭐⭐</span>
-                <a href="#" class="course-card__link button button--secondary">Узнать больше</a>
-            </div>
-        </div>
-    </section>
+    <div class="content">
+        <header class="header">
+            <div class="header__logo">МАРКЕТПРО</div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Главная</a></li>
+                    <li class="header__nav-item"><a href="#courses" class="header__nav-link">Курсы</a></li>
+                    <li class="header__nav-item"><a href="#aboutUs" class="header__nav-link">О нас</a></li>
+                    <li class="header__nav-item"><a href="#blog" class="header__nav-link">Блог</a></li>
+                    <li class="header__nav-item"><a href="#contacts" class="header__nav-link">Контакты</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link header__nav-link--auth">Вход/Регистрация</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section class="benefits">
-        <img src="images\3DStudentsmakingOkSing.jpg" alt="Студенты" class="benefits__image">
-        <h2 class="benefits__title section-title">Почему выбирают нас?</h2>
-        <div class="benefits__list">
-            <div class="benefits__item benefit">
-                <h3 class="benefit__title">Опытные преподаватели</h3>
-            </div>
-            <div class="benefits__item benefit">
-                <h3 class="benefit__title">Гибкий график обучения</h3>
-            </div>
-            <div class="benefits__item benefit">
-                <h3 class="benefit__title">Практические задания</h3>
-            </div>
-            <div class="benefits__item benefit">
-                <h3 class="benefit__title">Сертификаты по окончании</h3>
-            </div>
-        </div>
-    </section>
+            <section class="hero">
+                <img src="images\3DGirlWithBooks.jpg" alt="Девушка с книгами" class="hero__image">
+                <h1 class="hero__title">Прокачай свои навыки в маркетинге!</h1>
+                <p class="hero__subtitle">Онлайн-курсы от экспертов отрасли</p>
+                <a class="hero__button button button--primary" href="#courses">Записаться на курс</a>
+            </section>
 
-    <section class="testimonials">
-        <h2 class="testimonials__title section-title">Что говорят наши студенты</h2>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <!-- Слайд 1 -->
-                <div class="swiper-slide testimonial">
-                    <img src="images/StudentIvan.jpg" alt="Иван Иванов" class="testimonial__image">
-                    <p class="testimonial__text">"Отличный курс! Много полезной информации."</p>
-                    <span class="testimonial__author">- Иван Иванов</span>
+            <section class="courses" id="courses">
+                <h2 class="courses__title section-title">Наши популярные курсы</h2>
+                <div class="courses__list"></div>
+            </section>
+
+            <section class="benefits" id="aboutUs">
+                <img src="images\3DStudentsmakingOkSing.jpg" alt="Студенты" class="benefits__image">
+                <h2 class="benefits__title section-title">Почему выбирают нас?</h2>
+                <div class="benefits__list">
+                    <div class="benefits__item benefit">
+                        <h3 class="benefit__title">Опытные преподаватели</h3>
+                    </div>
+                    <div class="benefits__item benefit">
+                        <h3 class="benefit__title">Гибкий график обучения</h3>
+                    </div>
+                    <div class="benefits__item benefit">
+                        <h3 class="benefit__title">Практические задания</h3>
+                    </div>
+                    <div class="benefits__item benefit">
+                        <h3 class="benefit__title">Сертификаты по окончании</h3>
+                    </div>
                 </div>
-                <!-- Слайд 2 (добавляем еще один для примера) -->
-                <div class="swiper-slide testimonial">
-                    <img src="images/StudentElena.jpg" alt="Елена Петрова" class="testimonial__image">
-                    <p class="testimonial__text">"Практические задания помогли закрепить теорию."</p>
-                    <span class="testimonial__author">- Елена Петрова</span>
+            </section>
+
+            <section class="testimonials">
+                <h2 class="testimonials__title section-title">Что говорят наши студенты</h2>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonial">
+                            <img src="images/StudentIvan.jpg" alt="Иван Иванов" class="testimonial__image">
+                            <p class="testimonial__text">"Отличный курс! Много полезной информации."</p>
+                            <span class="testimonial__author">- Иван Иванов</span>
+                        </div>
+                        <div class="swiper-slide testimonial">
+                            <img src="images/StudentElena.jpg" alt="Елена Петрова" class="testimonial__image">
+                            <p class="testimonial__text">"Практические задания помогли закрепить теорию."</p>
+                            <span class="testimonial__author">- Елена Петрова</span>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
+            </section>
+
+            <section class="blog" id="blog">
+                <h2 class="blog__title section-title">Полезные статьи</h2>
+                <div class="blog__list">
+                    <article class="blog__item blog-post">
+                        <h3 class="blog-post__title">Как выбрать курс по маркетингу?</h3>
+                        <p class="blog-post__excerpt">Советы по выбору лучших курсов.</p>
+                        <span class="blog-post__date">Дата: 01.01.2023</span>
+                        <a href="https://www.youtube.com/watch?v=HIcSWuKMwOw" class="blog-post__link">Читать далее</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="subscribe">
+                <h2 class="subscribe__title section-title">Подпишитесь на наши новости</h2>
+                <form class="subscribe__form">
+                    <input type="email" placeholder="Ваш email" class="subscribe__input">
+                    <button type="submit" class="subscribe__button button button--primary"><a href="https://www.youtube.com/watch?v=HIcSWuKMwOw">Подписаться</a></button>
+                </form>
+            </section>
+
+        <footer class="footer">
+            <div class="footer__links" id="contacts">
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="#aboutUs" class="footer__link">О нас</a></li>
+                    <li class="footer__links-item"><a href="https://www.youtube.com/watch?v=HIcSWuKMwOw" class="footer__link">Политика конфиденциальности</a></li>
+                    <li class="footer__links-item"><a href="https://www.youtube.com/watch?v=HIcSWuKMwOw" class="footer__link">Условия использования</a></li>
+                </ul>
             </div>
-            <!-- Добавляем пагинацию (точки) -->
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
+            <div class="footer__social social">
+                <span class="social__title"><a href="https://vk.com/id376726079">Социальные сети</a></span>
+            </div>
+            <div class="footer__contacts">
+                <span class="footer__contacts-text">Контакты: marketpro@gmail.com</span>
+            </div>
+            <div class="footer__copyright">
+                <p>&copy; 2024 Курсы по маркетингу. Все права защищены.</p>
+            </div>
+        </footer>
+        
+        <button class="scroll-top" title="Наверх">↑</button>
+    </div>
 
-    <section class="blog">
-        <h2 class="blog__title section-title">Полезные статьи</h2>
-        <div class="blog__list">
-            <article class="blog__item blog-post">
-                <h3 class="blog-post__title">Как выбрать курс по маркетингу?</h3>
-                <p class="blog-post__excerpt">Советы по выбору лучших курсов.</p>
-                <span class="blog-post__date">Дата: 01.01.2023</span>
-                <a href="#" class="blog-post__link">Читать далее</a>
-            </article>
-        </div>
-    </section>
-
-    <section class="subscribe">
-        <h2 class="subscribe__title section-title">Подпишитесь на наши новости</h2>
-        <form class="subscribe__form">
-            <input type="email" placeholder="Ваш email" class="subscribe__input">
-            <button type="submit" class="subscribe__button button button--primary">Подписаться</button>
-        </form>
-    </section>
-
-    <footer class="footer">
-        <div class="footer__links">
-            <ul class="footer__links-list">
-                <li class="footer__links-item"><a href="#" class="footer__link">О нас</a></li>
-                <li class="footer__links-item"><a href="#" class="footer__link">Политика конфиденциальности</a></li>
-                <li class="footer__links-item"><a href="#" class="footer__link">Условия использования</a></li>
-            </ul>
-        </div>
-        <div class="footer__social social">
-            <span class="social__title">Социальные сети</span>
-        </div>
-        <div class="footer__contacts">
-            <span class="footer__contacts-text">Контакты: marketpro@gmail.com</span>
-        </div>
-        <div class="footer__copyright">
-            <p>&copy; 2024 Курсы по маркетингу. Все права защищены.</p>
-        </div>
-    </footer>
     
-    <button class="scroll-top" title="Наверх">↑</button>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js\scripts\script.js"></script>
