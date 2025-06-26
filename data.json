@@ -1,0 +1,21 @@
+[
+    {
+        "img": "images/SEO_Course.png",
+        "title": "Курс по SEO",
+        "description": "Научитесь оптимизировать сайты для поисковых систем.",
+        "rating": "⭐⭐⭐⭐⭐",
+        "alt": "Курс по SEO",
+        "button_text": "Узнать больше"
+    },
+
+    {
+        "img": "images/SMM_Course.jpg",
+        "title": "Курс по SMM",
+        "description": "Научитесь оптимизировать сайты для поисковых систем.",
+        "rating": "⭐⭐⭐⭐⭐",
+        "alt": "Курс по SMM",
+        "button_text": "Узнать больше"
+    }
+    
+
+]
